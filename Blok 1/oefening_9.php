@@ -18,10 +18,11 @@
         <?php
             for ($i=0; $i < count($worpen) ; $i++) { 
                 $amount = $i + 1;
-                $message = 
-                $res = 'worp ' . $amount . ' = ' . $worpen[$i] . '<br />';
+                $total = array_sum($worpen);
+                $res = 'worp ' . $amount . ' = ' . $worpen[$i] . '<br />'; 
                 echo $res;
             }
+            echo 'totaal: ' . $total;
         ?>
     </p>
 </body>
