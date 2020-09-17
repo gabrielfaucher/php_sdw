@@ -4,7 +4,9 @@
     $show_names = [];
 
     if ($name_length == NULL) {
-        $show_names = $names;
+        foreach ($names as $key => $value) {
+            array_push($show_names, 'Naamlengte = ' . strlen($value) . ' ' . $value) ;
+        }
         sort($show_names);
     } else {
         foreach ($names as $value) {
