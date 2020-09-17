@@ -7,21 +7,10 @@
         $show_names = $names;
     } else {
         foreach ($names as $value) {
-            // if (strlen($value) == $name_length) {
-            //     array_push($show_names, $value);
-            //     break;
-            // } 
-            // if (strlen($value) == $name_length) {
-            //     $show_names = ['No names found with that length!'];
-            // }
-            switch (strlen($value) == $name_length) {
-                case 'true':    
-                    array_push($show_names, $value);
-                    break;
-                case 'false':
-                    $show_names = [];
-                    break;
-            }
+            echo strlen($value) == $name_length;
+            if (strlen($value) == $name_length) {
+                array_push($show_names, $value);
+            }         
         }         
     }
 ?>
@@ -36,10 +25,15 @@
 <body>
     <p>
         <?php
-            foreach ($show_names as $value) {
-                $res = $value . '<br />';
-                echo $res;
-            };
+            if ($show_names == []) {
+                echo 'No names found with that length';
+            } else {
+                foreach ($show_names as $value) {
+                    var_dump($show_names);
+                    $res = $value . '<br />';
+                    echo $res;
+                };
+            }
         ?>
     </p>
 </body>
