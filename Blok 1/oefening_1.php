@@ -1,6 +1,7 @@
 <?php 
     $text = 'Dit is nog een keer oefening nummer 1'
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

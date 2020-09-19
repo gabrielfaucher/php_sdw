@@ -1,7 +1,9 @@
 <?php 
+    // Get user input
     $getal1 = $_GET['g1'];
     $getal2 = $_GET['g2'];
 
+    // Operations
     $som = $getal1 + $getal2;
     $verschil = $getal1 - $getal2;
     $product = $getal1 * $getal2;
@@ -15,7 +17,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oefening 2</title>
+    <title>Oefening 4</title>
 </head>
 <body>
     <p>

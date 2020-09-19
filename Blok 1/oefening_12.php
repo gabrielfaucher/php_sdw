@@ -6,6 +6,8 @@
     $name_length = $_GET['naamlengte'];
     $show_names = [];
 
+    // If $name_length is null, display all values in $names with their respective length.
+    // Otherwise, display the names with the selected strlen without their respective length
     if ($name_length == NULL) {
         foreach ($names as $key => $value) {
             array_push($show_names, 'Naamlengte = ' . strlen($value) . ' ' . $value) ;
@@ -31,13 +33,16 @@
 <body>
     <p>
         <?php
-            if ($show_names == []) {
+            // If $show_names is empty, display message. Otherwise, loop and display values in $show_names
+            if ($show_names == []) 
+            {
                 echo 'No names found with that length';
-            } else {
-                foreach ($show_names as $value) {
-                    $res = $value . '<br />';
-                    echo $res;
-                };
+            } else 
+            {
+                foreach ($show_names as $value) 
+                {
+                    echo $value . '<br />';
+                }
             }
         ?>
     </p>

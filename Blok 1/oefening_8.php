@@ -1,14 +1,18 @@
 <?php 
+   // Declare dice and populate with random numbers
    $my_dice = random_int(1, 6);
    $other_dice = random_int(1, 6);
 
    $comparison;
 
-   if ($my_dice > $other_dice) {
+   if ($my_dice > $other_dice) 
+   {
        $comparison = 'hoger';
-   } else if ($my_dice < $other_dice) {
+   } else if ($my_dice < $other_dice) 
+   {
        $comparison = 'lager';
-   } else if ($my_device == $other_dice) {
+   } else if ($my_dice == $other_dice) 
+   {
        $comparison = 'even hoog';
    };
 ?>
@@ -18,7 +22,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oefening 2</title>
+    <title>Oefening 8</title>
 </head>
 <body>
     <p>
