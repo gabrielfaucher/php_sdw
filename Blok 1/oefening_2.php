@@ -2,6 +2,7 @@
     $getal1 = 3;
     $getal2 = 8;
 
+    // Operations
     $som = $getal1 + $getal2;
     $verschil = $getal1 - $getal2;
     $product = $getal1 * $getal2;
