@@ -1,4 +1,4 @@
-<?php 
+<?php
     $names = ['Bram', 'Colin', 'Collin', 'Damian', 'David', 'Dieter',
     'Dimitri', 'Frial', 'Jaylani', 'Jesper', 'Jesse', 'Job', 'Jouke', 'Jouri',
     'Koen', 'Kyra', 'Manon', 'Mathhew', 'Matthijs', 'Niels', 'Pascal',
@@ -8,9 +8,9 @@
 
     // If the string length of an item in $names matches $name_length push it to $show_names
     foreach ($names as $value) {
-            if (strlen($value) == $name_length) {
-                array_push($show_names, $value); 
-            }
+        if (strlen($value) == $name_length) {
+            array_push($show_names, $value);
+        }
     }
 ?>
 
@@ -26,8 +26,7 @@
     <p>
         <?php
             // Output all items in $show_names
-            foreach ($show_names as $value) 
-            {
+            foreach ($show_names as $value) {
                 echo $value . '<br />';
             };
         ?>
