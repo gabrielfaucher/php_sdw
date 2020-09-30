@@ -19,12 +19,14 @@
         <p>
             <?php
                 $sixes = count(array_keys($worpen, 6));
+                
+                echo 'Aantal worpen: ' . count($worpen) . '<br />';
 
-                // Output throws in nice format
-                for ($i=0; $i < count($worpen) ; $i++) {
-                    $amount = $i + 1;
-                    echo 'worp ' . $amount . ' = ' . $worpen[$i] . '<br />';
+                echo 'Worpen: ';
+                foreach ($worpen as $value) {
+                    echo $value . ', ';
                 }
+                echo '<br />';
 
                 echo 'Aantal zessen = ' . $sixes;
             ?>

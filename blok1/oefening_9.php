@@ -6,6 +6,9 @@
     for ($i=0; $i < $aantal; $i++) {
         $worpen[$i] = random_int(1, 6);
     }
+
+    // Sum of elements in $worpen
+    $total = array_sum($worpen);
 ?>
 
 <!DOCTYPE html>
@@ -20,10 +23,8 @@
             <?php
                 // Loop over $worpen and echo each throw
                 for ($i=0; $i < count($worpen) ; $i++) {
-                    $amount = $i + 1;
                     // Calculate total throws
-                    $total = array_sum($worpen);
-                    echo 'worp ' . $amount . ' = ' . $worpen[$i] . '<br />';
+                    echo 'worp ' . ($i + 1) . ' = ' . $worpen[$i] . '<br />';
                 }
                 echo 'totaal: ' . $total;
             ?>
