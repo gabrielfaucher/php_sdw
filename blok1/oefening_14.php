@@ -28,6 +28,7 @@
     }
     // Count all elements in array
     $aantal = count($getallen);
+
 ?>
 
 <!DOCTYPE html>
