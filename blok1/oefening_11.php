@@ -1,5 +1,5 @@
 <?php
-// Define $grades & sort
+// Define $grades
 $grades = [5, 8, 7, 2, 9, 6, 9];
 
 
@@ -23,30 +23,30 @@ $average = array_sum($grades) / count($grades);
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oefening 11</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oefening 11</title>
 </head>
 
 <body>
-  <p>
-    Cijfers:
-    <?php
-    // Output all grades in $grades
-    echo implode(', ', $grades);
-    ?>
-    <br />
-    <?= 'Aantal cijfers: ' . count($grades) ?>
-    <br />
-    <?= 'Hoogste cijfer: ' . $max ?>
-    <br />
-    <?= 'Laagste cijfer: ' . $min ?>
-    <br />
+    <p>
+        Cijfers:
+        <?php
+        // Output all grades in $grades
+        echo implode(', ', $grades);
+        ?>
+        <br />
+        <?= 'Aantal cijfers: ' . count($grades) ?>
+        <br />
+        <?= 'Hoogste cijfer: ' . $max ?>
+        <br />
+        <?= 'Laagste cijfer: ' . $min ?>
+        <br />
 
-    <?php
-    echo 'Gemiddelde: ' . $average;
-    ?>
-  </p>
+        <?php
+        echo 'Gemiddelde: ' . $average;
+        ?>
+    </p>
 </body>
 
 </html>
