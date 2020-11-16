@@ -18,6 +18,6 @@ foreach ($_POST as $name => $value) {
     echo '</tr>';
 }
 
-// Close off the table
+// Close off the table structure
 echo '</tbody>';
 echo '</table>';
