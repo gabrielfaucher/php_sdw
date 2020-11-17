@@ -1,11 +1,8 @@
 <?php
 $numbers = [1, 1];
-$length = $_GET['lengte'];
+$length = $_GET['lengte'] ?? 100;
 
-if ($length == null) {
-    $length = 100;
-}
-
+// Create fibonacci sequence
 function fibonacci($array, $length)
 {
     for ($i = 1; $i < $length; $i++) {
