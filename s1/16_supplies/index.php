@@ -25,8 +25,10 @@ foreach ($products as $value) {
    td {
       border: 1px solid #333;
    }
-
    thead,
+   td:first-child {
+      font-weight: bold;
+   }
    tfoot {
       background-color: #333;
       color: #fff;
@@ -49,30 +51,29 @@ foreach ($products as $value) {
 </style>
 
 <body>
-<table>
-   <tr>
-      <th>Product</th>
-      <th>Voorraad</th>
-      <th>Bestellen</th>
-   </tr>
-   <?php
-   foreach ($stocks as $key => $value) {
-       $blue;
-       if ($value <= CRITICAL_STOCK) {
-           $order = "ja";
-           $blue = " ";
-       } else {
-           $order = "nee";
-           $blue = "blue";
-       }
-       echo "<tr class=$blue>";
-       echo "<td>$key</td>";
-       echo "<td>$value</td>";
-       echo "<td>$order</td>";
-       echo '</tr>';
-   }
-
-   ?>
+  <table>
+     <tr>
+        <th>Product</th>
+        <th>Voorraad</th>
+        <th>Bestellen</th>
+     </tr>
+     <?php
+     foreach ($stocks as $key => $value) {
+         $blue;
+         if ($value <= CRITICAL_STOCK) {
+             $order = "ja";
+             $blue = " ";
+         } else {
+             $order = "nee";
+             $blue = "blue";
+         }
+         echo "<tr class=$blue>";
+         echo "<td>$key</td>";
+         echo "<td>$value</td>";
+         echo "<td>$order</td>";
+         echo '</tr>';
+    }
+    ?>
+   </table>
 </body>
-
 </html>

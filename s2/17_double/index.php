@@ -1,20 +1,14 @@
 <?php
-// If $max is set with form, use that
-// Otherwise, use the querystring
-if ($_POST['max']) {
-    $max = $_POST['max'];
-} else {
-    $max = $_GET['max'];
-}
+$max = $_GET['max'] ?? NULL;
 
 // Initialize variables
 $getal = 1;
 $times = 0;
 
 // Count multiplications
-for ($getal; $getal <= $max; $getal++) {
-    $getal = $getal * 2;
-    $times++;
+while ($getal <= $max) {
+  $getal = $getal * 2; 
+  $times++;
 }
 
 ?>
@@ -28,18 +22,19 @@ for ($getal; $getal <= $max; $getal++) {
 </head>
 
 <body>
-    
     <?php
-    if ($max) {
-        echo $times;
+    if (!$max) {
+      echo "Je hebt geen parameters meegegeven! Gebruik het formulier hieronder of voor de waarde direct in de querystring in.";
     } else {
-        echo 'you fucked up';
+      echo "Je moet het basisgetal (1) $times keer verdubbelen tot dat het basisgetal (1) groter is dan $max.";
     }
     ?>
-    <form method='POST'>
+
+    <form>
         <input type='number' name='max'></input>
-        <button type="submit"></button>
+        <button>Submit</button>
     </form>
+
 </body>
 
 </html>
