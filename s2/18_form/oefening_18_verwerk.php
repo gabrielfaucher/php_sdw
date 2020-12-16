@@ -1,5 +1,4 @@
 <?php
-
 // Setup frontend table structure
 echo '<table>
         <thead>
@@ -12,10 +11,10 @@ echo '<table>
 
 // Display key-value pairs from form in the table
 foreach ($_POST as $name => $value) {
-    echo '<tr>';
-    echo "<td>$name</td>";
-    echo "<td>$value</td>";
-    echo '</tr>';
+	echo '<tr>';
+	echo "<td>$name</td>";
+	echo "<td>$value</td>";
+	echo '</tr>';
 }
 
 // Close off the table structure

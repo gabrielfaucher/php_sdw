@@ -7,17 +7,20 @@
   </head>
   <body>
     <form
-      action="/prac/s2/18_form/oefening_18_verwerk.php"
+      action="./oefening_18_verwerk.php"
       method="POST"
       accept-charset="utf-8"
     >
+	  <!-- Input Elements --!>
       <input type="text" name="text_input" placholder="name" />
       <input type="password" name="password_input" placeholder="password" />
+      <input type="checkbox" name="checkbox_input" placeholder="check it!" />
       <textarea
         name="textarea_input"
         placeholder="a whole bunch of text"
       ></textarea>
-      <input type="checkbox" name="checkbox_input" placeholder="check it!" />
+
+	  <!-- Selection List --!>
       <select name="selection_list_input">
         <option>First option</option>
         <option>Second option</option>
@@ -25,7 +28,9 @@
         <option>Fourth option</option>
         <option>Fifth option</option>
       </select>
+
       <button type="submit">Submit</button>
+
     </form>
   </body>
 </html>
